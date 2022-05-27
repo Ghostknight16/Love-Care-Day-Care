@@ -1,4 +1,6 @@
 body {
+  display: grid;
+  place-content: center;
   text-align: center;
   margin: 0;
   font-family: Montserrat;
@@ -40,76 +42,65 @@ a:link {
   background-color: #30D5C8;
 }
 
-.logo-div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.container {
+position: relative;
+min-height: 55vh;
 }
 
 .logo {
-width: 30rem;
+width: 18rem;
 border-radius: 100px;
-position: relative;
-/* margin-top: 200px */
+}
+
+.kid-imgs {
+  position: absolute;
 }
 
 .kids1, .kids4, .kids6 {
-  width: 20rem;
+  width: 12rem;
   border-radius: 100px;
-  position: relative;
-
 }
 
-.kids2, .kids3, .kids5, .kids8 {
-  width: 10rem;
+.kids2, .kids3, .kids8 {
+  width: 8rem;
   border-radius: 100px;
-  position: relative;
 }
 
 .kids5, .kids7 {
-  width: 12rem;
+  width: 8rem;
   border-radius: 100px;
-  position: relative;
 }
 
 .kids1 {
-  left: 430px;
-  bottom: 550px
+transform: translate(-18rem, -20rem);
 }
 
 .kids2 {
-  bottom: 270px;
-  right: 170px;
+transform: translate(-18rem, -10rem);
 }
 
 .kids3 {
-  top: 20px;
-  right: 330px;
+transform: translate(12rem, -12rem);
 }
 
 .kids4 {
-  right: 580px;
-  bottom: 550px;
+transform: translate(-5rem, -20rem);
 }
 
 .kids5 {
-  top: 20px;
-  right: 480px;
+transform: translate(-5rem, 1rem);
 }
 
 .kids6 {
-  left: 550px;
-  bottom: 800px;
+transform: translate(8rem, -20rem);
 }
 
 .kids7 {
-  bottom: 530px;
-  left: 285px;
+transform: translate(10rem, 1rem);
 }
 
 .kids8 {
-  left: 120px;
-  bottom: 240px;
+transform: translate(-20rem, 1rem);
 }
 
 /* Features */
@@ -118,6 +109,7 @@ position: relative;
   padding-bottom: 1.5rem;
   font-size: 2.5rem;
 }
+
 /* cta */
 
 #cta {
